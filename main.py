@@ -8,8 +8,8 @@ app = FastAPI(debug=True)
 #https://steam-game-mlops.onrender.com
 
 @app.get('/')
-def bienvenida():
-    return {'API de consultas base de datos  Steam Games, /docs en el link para  las funciones de consultas.'}
+def Welcome():
+    return {'API de consultas  funciones Steam Games.'}
 
 @app.get('/PlayTimeGenre/{genero}')
 def PlayTimeGenres(genero:str):
